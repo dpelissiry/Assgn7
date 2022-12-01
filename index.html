@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="delaware-county-density.css">  
+        
+        <script src="//d3js.org/d3.v4.min.js"></script>
+        <script src="https://d3js.org/topojson.v2.min.js"></script>
+        <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+    </head>
+    <body>
+        <h1 style = "text-align:center; color:steelblue"><bold> Delaware Population by County </bold></h1>
+        <div id="option">
+            <input name="updateButton" id="button"
+               type="button" 
+               value="Color" 
+               onclick="startstop(); start()" />
+            <input name="boundary" id="button1"
+               type="button" 
+               value="Toggle County Boundaries" 
+               onclick="toggle()" />
+
+        </div>
+        <svg width="960" height="600"></svg>
+        <script type="text/javascript" src="scale.js"></script>
+        <script type="text/javascript" src="delaware-county-density.js"></script>
+        
+    </body>
+</html>
